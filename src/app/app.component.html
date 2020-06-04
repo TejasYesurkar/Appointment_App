@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>x</h1>
+
+  <full-calendar
+  (dateClick)="handleDateClick($event)"
+  defaultView="dayGridMonth"
+  [plugins]="calendarPlugins"
+  [weekends]="false"
+  [events]="[
+    { title: 'event 1', date: '2020-06-06' },
+    { title: 'event 2', date: '2020-06-06' }
+  ]"
+></full-calendar>
+</div>
