@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import interactionPlugin from '@fullcalendar/interaction';
 import { TextAst } from '@angular/compiler';
 @Component({
   selector: 'app-root',
@@ -10,11 +11,11 @@ import { TextAst } from '@angular/compiler';
 export class AppComponent {
   title = 'FullPageCalender';
 
-  calendarPlugins = [dayGridPlugin]; // important!
+  calendarPlugins = [dayGridPlugin, interactionPlugin]; // important!
 
   calendarEvents = [
     { title: 'event 1', date: '2020-06-01' }
-TextAst];
+  ];
 
   
     handleDateClick(arg) { // handler method

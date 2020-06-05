@@ -2,13 +2,14 @@
   <h1>x</h1>
 
   <full-calendar
+  
   (dateClick)="handleDateClick($event)"
   defaultView="dayGridMonth"
   [plugins]="calendarPlugins"
-  [weekends]="false"
+  [weekends]="true"
   [events]="[
-    { title: 'event 1', date: '2020-06-06' },
-    { title: 'event 2', date: '2020-06-06' }
+    { title: 'event 1', date: '2020-06-05' },
+    { title: 'event 2', date: '2020-06-04' }
   ]"
 ></full-calendar>
 </div>
